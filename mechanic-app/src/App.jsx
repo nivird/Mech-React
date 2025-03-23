@@ -23,7 +23,7 @@ const App = () => {
               <li className="nav-item"><a className="nav-link" href="#">Contact</a></li>
             </ul>
             <ul className="navbar-nav">
-              <li className="nav-item me-3"><a href="/pages/mechanic.html" className="nav-link text-white">Mechanic</a></li>
+              <li className="nav-item me-3"><a href="./assets/pages/mechanic.html" className="nav-link text-white">Mechanic</a></li>
               <li className="nav-item"><a href="/pages/customer.html" className="nav-link text-white">Customer</a></li>
             </ul>
           </div>

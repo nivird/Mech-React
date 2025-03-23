@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function LoginPage() {
+function MechanicLoginPage() {
   return (
     <div className="glass-container">
       <div className="login-box">
@@ -15,11 +15,11 @@ function LoginPage() {
             <Link to="/reset-password">Forgot Password?</Link>
           </div>
           <button type="submit">Login</button>
-          <p>Don't have an account? <Link to="/signup" id="register">Register</Link></p>
+          <p>Don't have an account? <Link to="/MechanicSignup.jsx" id="register">Register</Link></p>
         </form>
       </div>
     </div>
   );
 }
 
-export default LoginPage;
+export default MechanicLoginPage;
