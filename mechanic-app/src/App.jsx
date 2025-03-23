@@ -5,8 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 // Import your pages
-import MechanicLoginPage from './pages/MechanicLoginPage';
-import CustomerLoginPage from './pages/CustomerLoginPage';
+import MechanicLoginPage from './pages/MechanicLoginPage.jsx';
+import CustomerLoginPage from './pages/CustomerLoginPage.jsx';
 
 const carouselImages = [
   ['cr1.jpg', 'cr2.jpg', 'cr3.jpg'],
