@@ -10,7 +10,7 @@ import CustomerLoginPage from './pages/CustomerLoginPage.jsx';
 
 const carouselImages = [
   ['cr1.jpg', 'cr2.jpg', 'cr3.jpg'],
-  ['BA1.jpg', 'BA2.jpg', 'BA3.jpg'],  // Fixed typo: BA@.jpg → BA2.jpg
+  ['BA1.jpg', 'BA2.jpg', 'BA3.jpg'],
   ['mechman1.jpg', 'mechman2.jpg', 'mechman3.jpg'],
 ];
 
@@ -32,7 +32,7 @@ const Home = () => {
         <div className="row g-3 gx-3">
           {['Tune-ups', 'Oil Change', 'Fluids', 'Diagnostics', 'Custom Requests', 'Towing', 'Tires and Balancing', 'Painting & Body', 'Installations', 'Repairs'].map(service => (
             <div className="col-md-6" key={service}>
-              <div className="services"><a href="#">{service}</a></div>
+              <div className="services"><Link to={`/services/${service.toLowerCase().replace(/\s+/g, '-')}`}>{service}</Link></div>
             </div>
           ))}
         </div>
@@ -51,12 +51,12 @@ const Home = () => {
                     </div>
                   ))}
                 </div>
-                <a className="carousel-control-prev" href={`#carousel${index}`} role="button" data-bs-slide="prev">
+                <button className="carousel-control-prev" type="button" data-bs-target={`#carousel${index}`} data-bs-slide="prev">
                   <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                </a>
-                <a className="carousel-control-next" href={`#carousel${index}`} role="button" data-bs-slide="next">
+                </button>
+                <button className="carousel-control-next" type="button" data-bs-target={`#carousel${index}`} data-bs-slide="next">
                   <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                </a>
+                </button>
               </div>
             </div>
           ))}
@@ -80,10 +80,10 @@ const App = () => {
           </button>
           <div className="collapse navbar-collapse" id="collapsibleNavbar">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item"><Link className="nav-link active" to="/">Home</Link></li>
-              <li className="nav-item"><Link className="nav-link" to="#">About us</Link></li>
-              <li className="nav-item"><Link className="nav-link" to="#">Services</Link></li>
-              <li className="nav-item"><Link className="nav-link" to="#">Contact</Link></li>
+              <li className="nav-item"><Link className="nav-link" to="/">Home</Link></li>
+              <li className="nav-item"><Link className="nav-link" to="/about">About Us</Link></li>
+              <li className="nav-item"><Link className="nav-link" to="/services">Services</Link></li>
+              <li className="nav-item"><Link className="nav-link" to="/contact">Contact</Link></li>
             </ul>
             <ul className="navbar-nav">
               <li className="nav-item me-3"><Link to="/mechanic-login" className="nav-link text-white">Mechanic</Link></li>
@@ -99,15 +99,18 @@ const App = () => {
         <Route path="/mechanic-login" element={<MechanicLoginPage />} />
         <Route path="/customer-login" element={<CustomerLoginPage />} />
         <Route path="/mechanic-profile" element={<div>Mechanic Profile Page Placeholder</div>} />
+        <Route path="/about" element={<div>About Us Page Placeholder</div>} />
+        <Route path="/services" element={<div>Services Page Placeholder</div>} />
+        <Route path="/contact" element={<div>Contact Page Placeholder</div>} />
         <Route path="*" element={<div className="text-center mt-4">404 - Page Not Found</div>} />
       </Routes>
 
       {/* Footer */}
       <div className="footer text-center py-3">
         <ul className="list-unstyled d-flex justify-content-center gap-2 mb-2">
-          <li><a href="#">Privacy policy</a></li>
-          <li><a href="#">Terms & conditions</a></li>
-          <li><a href="#">Contact Support</a></li>
+          <li><Link to="/privacy-policy">Privacy Policy</Link></li>
+          <li><Link to="/terms">Terms & Conditions</Link></li>
+          <li><Link to="/support">Contact Support</Link></li>
         </ul>
         <p>&copy; 2025 Mocanik. All rights reserved</p>
       </div>
