@@ -10,7 +10,7 @@ const App = () => {
       <nav className="navbar navbar-expand-lg navbar-custom">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
-            <img src="./assets/images/Logo-print-color-on-white.png" alt="Mocanik-logo" width="100" height="50" className="d-inline-block align-text-top" />
+            <img src="/images/Logo-print-color-on-white.png" alt="Mocanik-logo" width="100" height="50" className="d-inline-block align-text-top" />
           </a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
             <span className="navbar-toggler-icon"></span>
@@ -23,8 +23,8 @@ const App = () => {
               <li className="nav-item"><a className="nav-link" href="#">Contact</a></li>
             </ul>
             <ul className="navbar-nav">
-              <li className="nav-item me-3"><a href="./assets/pages/mechanic.html" className="nav-link text-white">Mechanic</a></li>
-              <li className="nav-item"><a href="/pages/customer.html" className="nav-link text-white">Customer</a></li>
+              <li className="nav-item me-3"><a href="/pages/MechanicLoginPage.jsx" className="nav-link text-white">Mechanic</a></li>
+              <li className="nav-item"><a href="/pages/CustomerLoginPage.jsx" className="nav-link text-white">Customer</a></li>
             </ul>
           </div>
         </div>
@@ -60,7 +60,7 @@ const App = () => {
                 <div className="carousel-inner">
                   {[1, 2, 3].map((img, idx) => (
                     <div className={`carousel-item ${idx === 0 ? 'active' : ''}`} key={img}>
-                      <img src={`./assets/images/${carouselImages[num - 1][idx]}`} className="d-block w-100" alt={`Slide ${img}`} />
+                      <img src={`/images/${carouselImages[num - 1][idx]}`} className="d-block w-100" alt={`Slide ${img}`} />
                     </div>
                   ))}
                 </div>
