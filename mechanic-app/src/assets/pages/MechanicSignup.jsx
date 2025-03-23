@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import '/assets/styles.css';
-import './MechanicSignup.css';
+import '../../assets/styles.css';
+
 
 const MechanicSignup = () => {
   const [formData, setFormData] = useState({
