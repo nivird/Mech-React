@@ -76,7 +76,7 @@ function CustomerLoginPage() {
             <Link to="/reset-password">Forgot Password?</Link>
           </div>
           <button type="submit">Login</button>
-          <p>Don't have an account? <Link to="/customer-signup">Register</Link></p>
+          <p>Don't have an account? <Link to="/CustomerSignup">Register</Link></p>
         </form>
       </div>
     </div>
