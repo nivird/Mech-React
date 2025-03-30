@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css"; // Make sure you import your custom CSS
+import "../App"; 
 
 const Aboutus = () => {
   return (
@@ -14,9 +14,9 @@ const Aboutus = () => {
             your vehicle runs smoothly and safely.
           </p>
         </div>
-        <div className="column image">
+       <div className="column image">
           <img
-            src="/assets/images/about1.jpg"
+            src="/assets/images/model1.jpg"
             alt="Mechanic Working"
             className="about-image"
           />
@@ -27,7 +27,7 @@ const Aboutus = () => {
       <div className="row reverse">
         <div className="column image">
           <img
-            src="/assets/images/about2.jpg"
+            src="/assets/images/model2.jpg"
             alt="Car Repair"
             className="about-image"
           />

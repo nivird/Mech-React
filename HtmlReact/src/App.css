@@ -1,3 +1,11 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -16,7 +24,7 @@
 
 .navbar-custom
 {
-    background-color: #004C97;
+    background-color: #1e73be;
     border-bottom: 5px solid red;
 }
 .navbar-nav .nav-link
@@ -410,4 +418,23 @@ p {
   .about-image {
       max-width: 100%;
   }
+}
+
+/*Mechanic sign up form style*/
+.signup-container {
+  max-width: 500px;
+  margin: auto;
+}
+.form-control {
+  margin-top: 0px;
+  padding: 1px;
+}
+.form-label {
+  margin-bottom:  2px;
+}
+
+
+.mb-2
+{
+  margin-bottom: 10px !important;
 }

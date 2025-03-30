@@ -18,7 +18,7 @@ function Header() {
                 <div className="collapse navbar-collapse" id="collapsibleNavbar">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item"><Link className="nav-link active" aria-current="page" to="/">Home</Link></li>
-                        <li className="nav-item"><Link className="nav-link" to="/aboutus">About us</Link></li>
+                        <li className="nav-item"><Link className="nav-link" to="/about">About us</Link></li>
                         <li className="nav-item"><Link className="nav-link" to="/services">Services</Link></li>
                         <li className="nav-item"><Link className="nav-link" to="/contact">Contact</Link></li>
                     </ul>
@@ -27,7 +27,8 @@ function Header() {
                 {/* Right side: Phone number and Appointment Button */}
                 <div className="contact-info">
                     <span className="text-white fw-bold">📞 (123) 456-7890</span>
-                    <Link to="/booking" className="btn btn-danger mt-2">Book an Appointment</Link>
+                    <Link to="/customerlogin" className="btn btn-danger mt-2">Customer</Link>
+                    <Link to="/mechaniclogin" className="btn btn-danger mt-2">Mechanic</Link>
                 </div>
             </div>
         </nav>

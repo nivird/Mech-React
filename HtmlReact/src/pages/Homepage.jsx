@@ -7,7 +7,9 @@ function HomePage() {
       <div className="hero-section text-center">
         <p className="title1">Your Mobile Mechanic Service</p>
         <p className="title2">Find & book a trusted mechanic now!</p>
+        <Link to="/booking">
         <button className="btn btn-danger">Book A Mechanic</button>
+        </Link>
       </div>
 
       {/* Grid Section */}
