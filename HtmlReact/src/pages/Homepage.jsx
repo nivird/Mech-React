@@ -14,13 +14,26 @@ function HomePage() {
 
       {/* Grid Section */}
       <div className="grid-container">
-        <div className="grid-item">
+        <div className="grid-item"  style="background-image: url('/assets/images/mechman1.jpg');">
           <Link to="/login">
-            <img src="/assets/images/mechman1.jpg" alt="Mechanic Mike" className="photo" />
-            <div className="text-field">Mike</div>
-            <div className="text-field">Car Repair</div>
-            <div className="text-field">Certified: Yes, ⭐⭐⭐⭐</div>
-            <div className="text-field">Available: No</div>
+          <div class="overlay">
+        <img src="/assets/images/mechman1.jpg" alt="Mechanic Mike" class="photo" />
+        <div class="text-field">Certified: Yes ⭐⭐⭐⭐</div>
+    </div>
+    <div class="text-field">Mike</div>
+    <div class="text-field">Car Repair</div>
+    <div class="text-field">Location: Connecticut</div>
+
+    <div class="links">
+        <a href="#">Services</a>
+        <a href="#">Reviews</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <div class="bottom-content">
+        <div class="text-field">Hourly Rate: $50</div>
+        <button class="book-btn">Book Now</button>
+    </div>
           </Link>
         </div>
 
