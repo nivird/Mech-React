@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 function HomePage() {
   return (
+    
     <div className="container my-4">
       <div className="hero-section text-center">
         <p className="title1">Your Mobile Mechanic Service</p>
@@ -13,49 +14,59 @@ function HomePage() {
       </div>
 
       {/* Grid Section */}
-      <div className="grid-container">
-        <div className="grid-item"  style="background-image: url('/assets/images/mechman1.jpg');">
-          <Link to="/login">
-          <div class="overlay">
-        <img src="/assets/images/mechman1.jpg" alt="Mechanic Mike" class="photo" />
-        <div class="text-field">Certified: Yes ⭐⭐⭐⭐</div>
-    </div>
-    <div class="text-field">Mike</div>
-    <div class="text-field">Car Repair</div>
-    <div class="text-field">Location: Connecticut</div>
-
-    <div class="links">
-        <a href="#">Services</a>
-        <a href="#">Reviews</a>
-        <a href="#">Contact</a>
-    </div>
-
-    <div class="bottom-content">
-        <div class="text-field">Hourly Rate: $50</div>
-        <button class="book-btn">Book Now</button>
-    </div>
-          </Link>
-        </div>
-
-        <div className="grid-item">
-          <Link to="/login">
-            <img src="/assets/images/mechman2.jpg" alt="Mechanic Abba" className="photo" />
-            <div className="text-field">Abba</div>
-            <div className="text-field">Auto Body</div>
-            <div className="text-field">Certified: No, ⭐⭐⭐⭐⭐</div>
-            <div className="text-field">Available: Yes</div>
-          </Link>
-        </div>
-
-        <div className="grid-item">
-          <Link to="/login">
-            <img src="/assets/images/mechman3.jpg" alt="Mechanic Alex" className="photo" />
-            <div className="text-field">Alex</div>
-            <div className="text-field">Oil Service</div>
-            <div className="text-field">Certified: Yes, ⭐⭐⭐⭐⭐</div>
-            <div className="text-field">Available: Yes</div>
-          </Link>
-        </div>
+      <div className="snapshot-container">
+     
+      <div className="snapshot-item" style={{ backgroundImage: 'url(./assets/images/Logo-gray.png)' }}>
+        <Link to="/booking" style={{ textDecoration: 'none', color: 'inherit' }}>
+          <div className="snapshot-overlay">
+            <img src="/assets/images/mechman1.jpg" alt="Mechanic Mike" className="photo" />
+            <div className="snapshot-text">Certified: Yes</div>
+          </div>
+          <div className="snapshot-text">Mike ⭐⭐⭐⭐</div>
+          <div className="snapshot-text">Car Repair</div>
+          <div className="snapshot-text">Location: Connecticut</div>
+          
+          <div className="bottom-content">
+            <div className="snapshot-text">Hourly Rate: $50</div>
+            <button className="book-btn btn btn-danger">Book Now</button>
+          </div>
+        </Link>
+      </div>
+   
+                 
+      <div className="grid-item" style={{ backgroundImage: 'url(./assets/images/Logo-gray.png)' }}>
+        <Link to="/booking" style={{ textDecoration: 'none', color: 'inherit' }}>
+          <div className="overlay">
+            <img src="/assets/images/mechman1.jpg" alt="Mechanic Mike" className="photo" />
+            <div className="snapshot-text">Certified: Yes</div>
+          </div>
+          <div className="snapshot-text">Alex ⭐⭐⭐⭐</div>
+          <div className="snapshot-text">Car Repair</div>
+          <div className="snapshot-text">Location: Connecticut</div>
+          
+          <div className="bottom-content">
+            <div className="snapshot-text">Hourly Rate: $50</div>
+            <button className="book-btn btn btn-danger">Book Now</button>
+          </div>
+        </Link>
+      </div>
+        
+      <div className="grid-item" style={{ backgroundImage: 'url(./assets/images/Logo-gray.png)' }}>
+        <Link to="/booking" style={{ textDecoration: 'none', color: 'inherit' }}>
+          <div className="overlay">
+            <img src="/assets/images/mechman1.jpg" alt="Mechanic Mike" className="photo" />
+            <div className="snapshot-text">Certified: Yes</div>
+          </div>
+          <div className="snapshot-text">joe⭐⭐⭐⭐</div>
+          <div className="snapshot-text">Car Repair</div>
+          <div className="snapshot-text">Location: Connecticut</div>
+            <div className="bottom-content">
+            <div className="snapshot-text">Hourly Rate: $50</div>
+            <button className="book-btn btn btn-danger">Book Now</button>
+          </div>
+        </Link>
+      </div>
+       
       </div>
 
       {/* Carousel Section */}

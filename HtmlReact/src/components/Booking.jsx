@@ -21,10 +21,10 @@ function Booking() {
         {mechanics.map((mechanic) => (
           <div key={mechanic.id} className="grid-item">
             <img src={mechanic.img} alt={mechanic.name} className="photo" />
-            <div className="text-field">Full Name: {mechanic.name}</div>
-            <div className="text-field">Mechanic: {mechanic.isMechanic ? "Yes" : "No"}</div>
-            <div className="text-field">Certified: {mechanic.certified ? "Yes" : "No"}</div>
-            <div className="text-field">Available: {mechanic.available ? "Yes" : "No"}</div>
+            <div className="booking-data">Full Name: {mechanic.name}</div>
+            <div className="booking-data">Mechanic: {mechanic.isMechanic ? "Yes" : "No"}</div>
+            <div className="booking-data">Certified: {mechanic.certified ? "Yes" : "No"}</div>
+            <div className="booking-data">Available: {mechanic.available ? "Yes" : "No"}</div>
             <Link to="/customerintakeform">
               <button className="btn btn-danger mt-2">Book Now</button>
             </Link>

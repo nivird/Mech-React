@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
@@ -14,7 +14,21 @@ import Customerintakeform from "./components/Customerintakeform";
 
 
 function App() {
+  const location= useLocation();
+  const backgrounds = {
+    "/":"url('/assets/images/Logo-sky.jpg)",
+    "/about":"url('/assets/images/Logocozy-office.jpg')",
+    "/contact":"url('/assets/images/Logocozy-office.jpg')",
+  };
   return (
+    <div
+    style={{
+      backgroundImage: backgrounds[location.pathname] || "none",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      height: "100vh",
+    }}
+  >
     <Router>
       <Header /> {/* Include Header at the top */}
 
@@ -32,6 +46,7 @@ function App() {
 
       <Footer /> {/* Include Footer at the bottom */}
     </Router>
+    </div>
   );
 }
 

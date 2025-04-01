@@ -1,5 +1,5 @@
-/*
-#root {
+
+/*#root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -147,6 +147,8 @@ display:block;
     box-sizing: border-box;
     font-family:'Courier New', Courier, monospace;
 }
+
+/*Login Box for both customer and mechanic*/
 .glass-container {
     width: 400px;
     height: 300px;
@@ -324,6 +326,33 @@ p {
   }
 }
 
+/*Home page 3 snap shot pics styling*/
+
+.snapshot-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    text-decoration: none;
+}
+.snapshot-item {
+    border: 1px solid #e00f0f;
+    padding: 15px;
+    text-align:left;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.snapshot-text {
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    text-align: left;
+}
+
+
+/*booking form grids*/
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -337,16 +366,14 @@ p {
     border-radius: 8px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
+/*homepage and booking page photos setting*/
 .photo {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     margin-bottom: 10px;
 }
-.text-field {
-    font-size: 14px;
-    font-weight: bold;
-}
+
 
 .red-box {
     background-color: red; /* Fills the box with red */
