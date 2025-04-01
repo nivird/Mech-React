@@ -3,6 +3,7 @@ import "../App";
 
 const Aboutus = () => {
   return (
+    <div className="aboutus-page">
     <div className="about-us-container">
       {/* First section: Text on left, Image on right */}
       <div className="row">
@@ -40,6 +41,7 @@ const Aboutus = () => {
           </p>
         </div>
       </div>
+    </div>
     </div>
   );
 };

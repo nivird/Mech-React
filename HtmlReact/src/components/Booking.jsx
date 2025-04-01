@@ -15,6 +15,7 @@ const mechanics = [
 
 function Booking() {
   return (
+    <div className="booking-page">
     <div className="container">
       <h2 className="text-center my-4">Mechanic Availability</h2>
       <div className="grid-container">
@@ -31,6 +32,7 @@ function Booking() {
           </div>
         ))}
       </div>
+    </div>
     </div>
   );
 }

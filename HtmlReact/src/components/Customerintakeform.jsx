@@ -29,6 +29,7 @@ const Customerintakeform = () => {
   };
 
   return (
+    <div className="intake-page">
     <div className="container mt-5">
       <h2>Customer Intake Form</h2>
       <form className="p-4 border rounded" onSubmit={handleSubmit}>
@@ -84,6 +85,7 @@ const Customerintakeform = () => {
         </div>
         <button type="submit" className="btn btn-primary w-100">Book Now</button>
       </form>
+    </div>
     </div>
   );
 };
