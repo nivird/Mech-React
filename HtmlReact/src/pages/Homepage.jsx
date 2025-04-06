@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function HomePage() {
   return (
-    
+  <div className="home-page">
     <div className="container my-4">
       <div className="hero-section text-center">
         <p className="title1">Your Mobile Mechanic Service</p>
@@ -99,6 +99,7 @@ function HomePage() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

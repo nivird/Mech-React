@@ -464,22 +464,66 @@ p {
     height: 100%;
     background: url('/assets/images/Logo-sky.jpg') no-repeat center center fixed;
     background-size: cover;
-    opacity: 0.5; /* Adjust this value for more/less transparency */
+    opacity: 0.2; /* Adjust this value for more/less transparency */
     z-index: -1;
   }
   
-  .aboutus-page {
-    background: url('/assets/images/about-bg.jpg') no-repeat center center fixed;
+  .aboutus-page{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .aboutus-page::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/assets/images/Logocozy-office.jpg') no-repeat center center fixed;
     background-size: cover;
+    opacity: 0.3; /* Adjust this value for more/less transparency */
+    z-index: -1;
+  }
+
+  .booking-page{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
   }
   
-  .booking-page {
-    background: url('/assets/images/contact-bg.jpg') no-repeat center center fixed;
+  .booking-page ::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/assets/images/Logo-lobby.jpg') no-repeat center center fixed;
     background-size: cover;
+    opacity: 0.1; /* Adjust this value for more/less transparency */
+    z-index: -1;
   }
 
   .intake-page
   {
-    background: url('/assets/images/contact-bg.jpg') no-repeat center center fixed;
+        position: relative;
+        width: 100%;
+        /*height: 100vh;*/
+        overflow: hidden;
+  }
+  .intake-page::before
+  {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/assets/images/Logocozy-office.jpg') no-repeat center center fixed;
     background-size: cover;
+    opacity: 0.3; /* Adjust this value for more/less transparency */
+    z-index: -1;
   }
