@@ -34,12 +34,18 @@ const CustomerIntakeForm = () => {
   };
 
   return (
-    <div className="d-flex align-items-center min-vh-100 p-5" style={{ backgroundColor: "#f8f9fa" }}>
-      <div className="w-50 me-4">
-        <img src="/assets/images/advertise3.PNG" alt="Service Banner" className="img-fluid rounded" />
+    <div className="container-fluid p-4" style={{ backgroundColor: "#f8f9fa" }}>
+    <div className="row align-items-center">
+      
+      {/* Image - hidden on small screens */}
+      <div className="col-md-6 d-none d-md-block">
+        <img src="/assets/images/advertise3.PNG" alt="Service Banner" className="img-fluid rounded w-100" />
       </div>
-      <div className="container p-4 border rounded w-50 bg-white" style={{ boxShadow: "5px 5px 15px rgba(0, 0, 0, 0.1)" }}>
-        <h2 className="text-center mb-4">Customer Intake Form</h2>
+  
+      {/* Form - always visible, full width on mobile */}
+      <div className="col-12 col-md-6 mt-4 mt-md-0">
+        <div className="p-4 border rounded bg-white shadow">
+          <h2 className="text-center mb-4">Customer Intake Form</h2>
         <form onSubmit={handleSubmit}>
           {[
             { label: "Full Name", name: "fullName", type: "text" },
@@ -96,6 +102,8 @@ const CustomerIntakeForm = () => {
           <button type="submit" className="btn btn-danger w-100 fw-bold">Book Now</button>
         </form>
       </div>
+    </div>
+    </div>
     </div>
   );
 };
